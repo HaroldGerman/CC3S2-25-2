@@ -1,0 +1,26 @@
+=== DNS (dig) ===
+\n--- dig A example.com +noall +answer ---
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> A example.com +noall +answer
+;; global options: +cmd
+;; no servers could be reached
+\n--- dig AAAA example.com +noall +answer ---
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> AAAA example.com +noall +answer
+;; global options: +cmd
+;; no servers could be reached
+\n--- dig MX example.com +noall +answer ---
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+
+; <<>> DiG 9.18.30-0ubuntu0.24.04.2-Ubuntu <<>> MX example.com +noall +answer
+;; global options: +cmd
+;; no servers could be reached
+\n# No se detectó TTL en la salida (posible ausencia de respuesta A).
