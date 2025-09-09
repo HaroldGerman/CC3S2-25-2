@@ -1,0 +1,5 @@
+* 96fb51e fix/error-handling: mejora manejo de errores en summarize
+| * 43d078a fix/error-handling: mejora manejo de errores en summarize
+|/  
+* 80367ed feature/msg es una rama para agregar un mensaje nuevo
+* 4c8c0d4 Inicial: app.py y tests

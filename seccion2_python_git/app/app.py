@@ -14,6 +14,7 @@ def summarize(nums: List[int]) -> Dict[str, float]:
 # CLI
 if __name__ == "__main__":
     import sys
+    print("Bienvenido al resumen de números")
     if len(sys.argv) != 2:
         print("Uso: python -m app '1,2,3'")
         sys.exit(1)
@@ -23,5 +24,5 @@ if __name__ == "__main__":
         result = summarize(nums)
         print(result)
     except ValueError as e:
-        print(f"Error: {e}")
+        print(f"Error : {e}")
         sys.exit(1)
