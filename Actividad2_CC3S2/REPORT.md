@@ -20,9 +20,20 @@ Nos damos cuentas que sale:
 Eso quiere decir que como no hay metodo POST sale el 405, ya que solo hay metodo GET.
 <img width="825" height="511" alt="imagen" src="https://github.com/user-attachments/assets/f35dcb4a-37ce-452f-b38d-d90dfbdb76c8" />
 
+Al realizar:
+
+    ss -ltnp | grep :8080
+
+Nos sale:
+
+    LISTEN 0      128          0.0.0.0:8080      0.0.0.0:*    users:(("python",pid=18281,fd=3))
+
+Donde python3 está alojado en el puerto 8080
+    
 Pregunta guía: ¿Qué campos de respuesta cambian si actualizas MESSAGE/RELEASE sin reiniciar el proceso? Explica por qué.  
 
 No hay ningun cambio porque las variables se cargan al iniciar la pp, por lo que si acitualizamos los valores sin reiniciar el proceso no cambia nada.
+
 
 
 
