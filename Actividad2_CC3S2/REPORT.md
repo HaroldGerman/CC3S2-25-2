@@ -31,7 +31,7 @@ Nos sale:
 
 Donde python3 está alojado en el puerto 8080
     
-Pregunta guía: ¿Qué campos de respuesta cambian si actualizas MESSAGE/RELEASE sin reiniciar el proceso? Explica por qué.  
+### Pregunta guía: ¿Qué campos de respuesta cambian si actualizas MESSAGE/RELEASE sin reiniciar el proceso? Explica por qué.  
 
 No hay ningun cambio porque las variables se cargan al iniciar la pp, por lo que si acitualizamos los valores sin reiniciar el proceso no cambia nada.
 
@@ -47,6 +47,14 @@ y como nos podemos dar cuenta, arriba no puse el +ttlunits y en esta imagin si, 
 son los cambias en el formato que da el tiempo, SIN el +ttlunits nos da el tiempo en segundos
 y CON el +ttlunits no da el tiempo en formato minutos y segundos (en hora tambien, dependiendo de cuanto tarde).
 <img width="732" height="378" alt="imagen" src="https://github.com/user-attachments/assets/01687856-cc37-42c1-ba8a-a45ef250f894" />
+
+### Pregunta guía: ¿Qué diferencia hay entre /etc/hosts y una zona DNS autoritativa? ¿Por qué el hosts sirve para laboratorio?
+
+El /etc/host es de uso local, solo funcionaria en mi maquina, mientras que el DNS autoritativo es un dominio mas publico que publica un dominio
+y responde a cualquier cliente siempre que este apunte al DNS de mi host.
+
+
+
 
 
 
