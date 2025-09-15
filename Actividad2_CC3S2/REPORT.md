@@ -95,6 +95,30 @@ creado manualmente. Y con el -k se ignora el error de certificado autofirmado.
 
 Nos damos cuenta que flask y Nginx escuchan a sus puertos respectivos: 8080 y 443
 
+# 4) 12-Factor App: port binding, configuración y logs
+
+## Port binding: muestra que la app escucha en el puerto indicado por PORT (evidencia ss).
+<img width="778" height="59" alt="imagen" src="https://github.com/user-attachments/assets/8d7b5a62-b855-408f-bff7-de490f322b18" />
+
+## Config por entorno: ejecuta dos veces con distintos MESSAGE/RELEASE y documenta el efecto en la respuesta JSON.
+Entrada 1
+    export MESSAGE="Hola Mundo" RELEASE="v1"
+    curl http://127.0.0.1:8080/
+Salida 1:
+    {"message":"Hola Mundo","release":"v1"}
+
+Entrada 2
+    $ export MESSAGE="Deploy en Producción" RELEASE="v2"
+    $ curl http://127.0.0.1:8080/
+Salida 2:
+    {"message":"Deploy en Producción","release":"v2"}
+
+## Logs a stdout: redirige a archivo mediante pipeline de shell y adjunta 5 líneas representativas. Explica por qué no se configura log file en la app.
+
+<img width="1600" height="294" alt="imagen" src="https://github.com/user-attachments/assets/23f32080-4dbc-4583-9107-c1bf3fa96021" />
+<img width="1011" height="109" alt="imagen" src="https://github.com/user-attachments/assets/47968df6-17da-4371-9e85-482baa8c8abf" />
+
+
 
 
 
