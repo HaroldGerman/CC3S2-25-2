@@ -62,9 +62,9 @@ Como no tenía make, lo generé manualmente.
 
     sudo mkdir -p /etc/nginx/ssl
     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-  -keyout /etc/nginx/ssl/miapp.local.key \
-  -out /etc/nginx/ssl/miapp.local.crt \
-  -subj "/CN=miapp.local"
+    -keyout /etc/nginx/ssl/miapp.local.key \
+    -out /etc/nginx/ssl/miapp.local.crt \
+    -subj "/CN=miapp.local"
 
 ## Configura Nginx: usa el ejemplo provisto para terminación TLS y proxy_pass a http://127.0.0.1:8080 con cabeceras X-Forwarded-*. Luego nginx -t y reinicia el servicio. Incluye el snippet clave de tu server en el reporte.
 
@@ -94,6 +94,7 @@ creado manualmente. Y con el -k se ignora el error de certificado autofirmado.
 <img width="1049" height="315" alt="imagen" src="https://github.com/user-attachments/assets/893fd8af-8e63-4e71-bddf-7f323cbb567c" />
 
 Nos damos cuenta que flask y Nginx escuchan a sus puertos respectivos: 8080 y 443
+
 
 
 
