@@ -43,6 +43,13 @@ No hay ningun cambio porque las variables se cargan al iniciar la pp, por lo que
 En general vendrían a ser lo mismo pero el TCP es como si hicieramos "fuerza bruta".
 <img width="755" height="746" alt="imagen" src="https://github.com/user-attachments/assets/93497ca2-24f2-4e2e-8d70-aa8839b1ab05" />
 
+y como nos podemos dar cuenta, arriba no puse el +ttlunits y en esta imagin si, lo que puedo notar
+son los cambias en el formato que da el tiempo, SIN el +ttlunits nos da el tiempo en segundos
+y CON el +ttlunits no da el tiempo en formato minutos y segundos (en hora tambien, dependiendo de cuanto tarde).
+<img width="732" height="378" alt="imagen" src="https://github.com/user-attachments/assets/01687856-cc37-42c1-ba8a-a45ef250f894" />
+
+
+
 
 
 
